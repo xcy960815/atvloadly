@@ -24,11 +24,9 @@ English | [Svenska](docs/readme/README_sv.md) | [中文](docs/readme/README_cn.m
 
 atvloadly is a web service that supports sideloading app on Apple TV. It uses [Impactor](https://github.com/claration/Impactor) as the underlying technology for sideloading and automatically refreshes the app to ensure its long-term availability. It runs as a Docker service on Linux/OpenWrt or as a native desktop app on macOS and Windows.
 
-## Self-hosted Docker fork
-
 This fork includes an optional per-app Apple TV restart after a full installation or source update. Enable the restart switch on the installation form for the apps that need it. Profile refreshes leave the TV running.
 
-The included Compose file uses the fork's versioned Linux amd64 image. Start it with `docker compose up -d`. To publish a new image, push a tag such as `selfhost-0.8.6-fork.2` on the maintenance branch. The Self-hosted Docker image workflow tests the code and publishes `ghcr.io/xcy960815/atvloadly` with that exact tag. Update the deployment's image reference when ready to upgrade.
+The included Compose file uses the fork's versioned Linux amd64 image. Start it with `docker compose up -d`. To publish a new image, push a tag such as `selfhost-0.8.6-fork.3` on the maintenance branch. The Self-hosted Docker image workflow tests the code and publishes `ghcr.io/xcy960815/atvloadly` with that exact tag. Update the deployment's image reference when ready to upgrade.
 
 ## Features
 
@@ -76,7 +74,7 @@ Docker images built from this version include the device client. For standalone 
    
    **Docker:**
    ```
-   docker run --security-opt seccomp:unconfined -d --name=atvloadly --restart=always -p 5533:80 -v /path/to/mount/dir:/data -v /var/run/dbus:/var/run/dbus -v /var/run/avahi-daemon:/var/run/avahi-daemon ghcr.io/xcy960815/atvloadly:selfhost-0.8.6-fork.1
+   docker run --security-opt seccomp:unconfined -d --name=atvloadly --restart=always -p 5533:80 -v /path/to/mount/dir:/data -v /var/run/dbus:/var/run/dbus -v /var/run/avahi-daemon:/var/run/avahi-daemon ghcr.io/xcy960815/atvloadly:selfhost-0.8.6-fork.2
    ```
 
    The `/var/run/dbus` and `/var/run/avahi-daemon` of the host machine need to be shared with the docker container for use.
@@ -89,7 +87,7 @@ Docker images built from this version include the device client. For standalone 
 
    **Docker Compose:**
    ```
-   wget https://raw.githubusercontent.com/xcy960815/atvloadly/selfhost-0.8.6-fork.1/docker-compose.yml
+   wget https://raw.githubusercontent.com/xcy960815/atvloadly/selfhost-0.8.6-fork.2/docker-compose.yml
    docker compose pull
    docker compose up -d
    ```

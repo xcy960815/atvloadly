@@ -71,7 +71,7 @@ atvloadly 是一个支持在 AppleTV 上侧载应用的 web 服务。底层通�
    
    **Docker:**
    ```
-   docker run --security-opt seccomp:unconfined -d --name=atvloadly --restart=always -p 5533:80 -v /path/to/mount/dir:/data -v /var/run/dbus:/var/run/dbus -v /var/run/avahi-daemon:/var/run/avahi-daemon ghcr.io/xcy960815/atvloadly:selfhost-0.8.6-fork.1
+   docker run --security-opt seccomp:unconfined -d --name=atvloadly --restart=always -p 5533:80 -v /path/to/mount/dir:/data -v /var/run/dbus:/var/run/dbus -v /var/run/avahi-daemon:/var/run/avahi-daemon ghcr.io/xcy960815/atvloadly:selfhost-0.8.6-fork.2
    ```
    
    宿主机的 `/var/run/dbus` 和`/var/run/avahi-daemon` 需要共享给 docker 容器使用
@@ -84,7 +84,7 @@ atvloadly 是一个支持在 AppleTV 上侧载应用的 web 服务。底层通�
 
    **Docker Compose:**
    ```
-   wget https://raw.githubusercontent.com/xcy960815/atvloadly/selfhost-0.8.6-fork.1/docker-compose.yml
+   wget https://raw.githubusercontent.com/xcy960815/atvloadly/selfhost-0.8.6-fork.2/docker-compose.yml
    docker compose pull
    docker compose up -d
    ```
