@@ -3,7 +3,7 @@ services:
   atvloadly:
     container_name: atvloadly
     hostname: atvloadly
-    image: bitxeno/atvloadly:latest
+    image: ghcr.io/xcy960815/atvloadly:selfhost-0.8.6-fork.1
     security_opt:
       - seccomp:unconfined
     volumes:
