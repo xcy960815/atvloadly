@@ -72,11 +72,6 @@
         "fail": "失败"
     },
     "home": {
-        "release_banner": {
-            "message": "atvloadly {{version}} 已发布，当前版本为 {{current}}。",
-            "view": "查看发布",
-            "dismiss": "忽略"
-        },
         "heading": {
             "paired_devices": "已连接设备",
             "service_status": "服务状态",

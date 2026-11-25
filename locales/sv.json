@@ -72,11 +72,6 @@
     "fail": "Misslyckades"
   },
   "home": {
-    "release_banner": {
-      "message": "atvloadly {{version}} finns tillgänglig. Du kör {{current}}.",
-      "view": "Visa version",
-      "dismiss": "Stäng"
-    },
     "heading": {
       "paired_devices": "Parkopplade enheter",
       "service_status": "Tjänststatus",

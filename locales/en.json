@@ -72,11 +72,6 @@
         "fail": "Failed"
     },
     "home": {
-        "release_banner": {
-            "message": "atvloadly {{version}} is available. You are running {{current}}.",
-            "view": "View release",
-            "dismiss": "Dismiss"
-        },
         "heading": {
             "paired_devices": "Paired Devices",
             "service_status": "Service Status",

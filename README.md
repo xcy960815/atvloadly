@@ -74,7 +74,7 @@ Docker images built from this version include the device client. For standalone 
    
    **Docker:**
    ```
-   docker run --security-opt seccomp:unconfined -d --name=atvloadly --restart=always -p 5533:80 -v /path/to/mount/dir:/data -v /var/run/dbus:/var/run/dbus -v /var/run/avahi-daemon:/var/run/avahi-daemon ghcr.io/xcy960815/atvloadly:selfhost-0.8.6-fork.2
+   docker run --security-opt seccomp:unconfined -d --name=atvloadly --restart=always -p 5533:80 -v /path/to/mount/dir:/data -v /var/run/dbus:/var/run/dbus -v /var/run/avahi-daemon:/var/run/avahi-daemon ghcr.io/xcy960815/atvloadly:selfhost-0.8.6-fork.3
    ```
 
    The `/var/run/dbus` and `/var/run/avahi-daemon` of the host machine need to be shared with the docker container for use.
@@ -87,7 +87,7 @@ Docker images built from this version include the device client. For standalone 
 
    **Docker Compose:**
    ```
-   wget https://raw.githubusercontent.com/xcy960815/atvloadly/selfhost-0.8.6-fork.2/docker-compose.yml
+   wget https://raw.githubusercontent.com/xcy960815/atvloadly/selfhost-0.8.6-fork.3/docker-compose.yml
    docker compose pull
    docker compose up -d
    ```

@@ -72,11 +72,6 @@
     "fail": "Неуспешно"
   },
   "home": {
-    "release_banner": {
-      "message": "Доступан је atvloadly {{version}}. Користите верзију {{current}}.",
-      "view": "Прикажи издање",
-      "dismiss": "Одбаци"
-    },
     "heading": {
       "paired_devices": "Упарени уређаји",
       "service_status": "Статус услуге",

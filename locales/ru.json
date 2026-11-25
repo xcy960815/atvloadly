@@ -72,11 +72,6 @@
         "fail": "Не удалось"
     },
     "home": {
-        "release_banner": {
-            "message": "Доступна atvloadly {{version}}. Установлена версия {{current}}.",
-            "view": "Открыть релиз",
-            "dismiss": "Скрыть"
-        },
         "heading": {
             "paired_devices": "Сопряжённые устройства",
             "service_status": "Статус службы",

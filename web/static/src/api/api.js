@@ -15,12 +15,6 @@ export default {
       method: "get",
     });
   },
-  getLatestRelease: () => {
-    return request({
-      url: "/api/version/latest",
-      method: "get",
-    });
-  },
   getDevice: (id) => {
     return request({
       url: `/api/devices/${id}`,
