@@ -66,7 +66,7 @@ atvloadly — веб-сервис для sideload-установки прило�
 
    **Docker:**
    ```
-   docker run --security-opt seccomp:unconfined -d --name=atvloadly --restart=always -p 5533:80 -v /path/to/mount/dir:/data -v /var/run/dbus:/var/run/dbus -v /var/run/avahi-daemon:/var/run/avahi-daemon ghcr.io/xcy960815/atvloadly:selfhost-0.8.6-fork.3
+   docker run --security-opt seccomp:unconfined -d --name=atvloadly --restart=always -p 5533:80 -v /path/to/mount/dir:/data -v /var/run/dbus:/var/run/dbus -v /var/run/avahi-daemon:/var/run/avahi-daemon ghcr.io/xcy960815/atvloadly:0.1.0
    ```
 
    Каталоги `/var/run/dbus` и `/var/run/avahi-daemon` хоста нужно пробросить в Docker-контейнер.
@@ -79,7 +79,7 @@ atvloadly — веб-сервис для sideload-установки прило�
 
    **Docker Compose:**
    ```
-   wget https://raw.githubusercontent.com/xcy960815/atvloadly/selfhost-0.8.6-fork.3/docker-compose.yml
+   wget https://raw.githubusercontent.com/xcy960815/atvloadly/0.1.0/docker-compose.yml
    docker compose pull
    docker compose up -d
    ```
